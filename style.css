@@ -25,7 +25,7 @@
     color: white;
     font-size: 30px;
     align-items: baseline;
-    text-align: left;
+    text-align: start;
 }
 
 #image{
@@ -133,12 +133,19 @@
     height: 150px;
     margin: 10px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) {
+    #text{
+        font-size: 16px;
+    }
     #container{
         width: 1200px;
     }
     #cards-container{
         width: 1200px;
+    }
+    .cards{
+        height: 300px;
+        width: 300px;
     }
     #projects{
         width: 1200px;
@@ -153,7 +160,10 @@
         width: 1200px;
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
+    #text{
+        font-size: 16px;
+    }
     #container{
         width: 800px;
         flex-direction: column;
@@ -162,6 +172,18 @@
         width: 800px;
         height: 1600px;
         flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+    .cards{
+        height: 300px;
+        width: 300px;
+        font-size: 20px;
+    }
+    .cards h2, .card p{
+        padding: 20px;
+        font-size: 30px;
+        margin: 0px;
     }
     #bigtitle{
         width: 800px;
