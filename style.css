@@ -143,6 +143,9 @@
     #cards-container{
         width: 1200px;
     }
+    #bigtitle{
+        width: 1200px;
+    }
     .cards{
         height: 300px;
         width: 300px;
@@ -168,11 +171,14 @@
         width: 800px;
         flex-direction: column;
     }
+    #bigtitle{
+        width: 700px;
+    }
     #cards-container{
         width: 800px;
         height: 1600px;
         flex-direction: column;
-        padding: 0px;
+
         margin: 0px;
     }
     .cards{
@@ -194,7 +200,7 @@
         width: 800px;
         height: 1200px;
         flex-direction: column;
-        padding: 20px;
+        padding: 30px;
     }
     .row{
         width: 800px;
