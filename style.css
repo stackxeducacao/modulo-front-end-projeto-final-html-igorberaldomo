@@ -23,7 +23,7 @@
 }
 
 /* barra de icones */
-#nav{
+#container__nav{
     display: flex;
     justify-content: center;
     position: absolute;
@@ -33,28 +33,28 @@
     width: 400px;
     
 }
-#nav img{
+.container__nav__img{
     margin: 10px;
 }
 /* textxo de apresentação */
-#text{
+#container__text{
     color: white;
     font-size: 30px;
     align-items: baseline;
     text-align: start;
 }
-#link{
+#container__text__link{
     color: white;
     font-weight: 600;
     text-decoration: underline;
     text-decoration-color:teal ;
 }
-#image{
+#container__main-image{
     background-image: url('assets/images/image-profile-desktop.webp');
     height: 650px;
     width: 400px;
 }
-#sublinhado{
+#container__text__h1__sublinhado{
     text-decoration: underline;
     text-decoration-color: teal;
 }
@@ -70,7 +70,7 @@
     background-color: rgba(0, 0, 0, 0.829);
 }
 /* linha de cards */
-.row{
+.cards-container__row{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +80,7 @@
     width: 1800px;
 }
 /* os cards em si */
-.cards{
+.cards-container__row__cards{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,10 +94,10 @@
     font-size: 32px;
 }
 /* formatação dos cards */
-.cards h2, .card p{
+.cards-container__row__cards__h2, .cards-container__row__cards__p{
     margin: 0px;
 }
-.cards img{
+.cards-container__row__cards__img{
     background-color: white;
 }
 
@@ -127,7 +127,7 @@
     color :white
 }
 /* linha da imagem */
-#image_row{
+.projects__image-row{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +136,7 @@
     height: 1800px;
     width: 1800px;
 }
-.projects_image{
+.projects__image-row__projects-image{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,7 +158,7 @@
     background-color: rgba(0, 0, 0, 0.829);
     color: white;
 }
-#form input{
+.form__input{
     padding: 10px;
     width: 500px;
     height: 30px;
@@ -168,7 +168,7 @@
     border: none;
     box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.692)
 }
-#form textarea{
+.form__textarea{
     padding: 10px;
     width: 500px;
     height: 150px;
@@ -179,7 +179,7 @@
     box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.692)
 
 }
-form button{
+.form__button{
 
     width: 100px;
     height: 30px;
@@ -190,7 +190,7 @@ form button{
     border-radius: 5px;
 }
 @media screen and (max-width: 1600px) {
-    #text{
+    #container__text{
         font-size: 16px;
     }
     #container{
@@ -202,7 +202,7 @@ form button{
     #bigtitle{
         width: 1200px;
     }
-    .cards{
+    .cards-container__row__cards{
         height: 300px;
         width: 300px;
     }
@@ -210,10 +210,10 @@ form button{
         width: 1200px;
         height: 2100px;
     }
-    .row{
+    .cards-container__row{
         width: 1200px;
     }
-    #image_row{
+    .projects__image-row{
         width: 1200px;
     }
     #form{
@@ -221,7 +221,7 @@ form button{
     }
 }
 @media screen and (max-width: 1200px) {
-    #text{
+    #container__text{
         font-size: 16px;
     }
     #container{
@@ -238,13 +238,13 @@ form button{
         flex-direction: column;
         
     }
-    .cards{
+    .cards-container__row__cards{
         padding: 20px;
         height: 300px;
         width: 300px;
         font-size: 20px;
     }
-    .cards h2, .card p{
+    .cards-container__row__cards__h2, .cards-container__row__cards__p{
         padding: 0px;
         margin-top: 0px;
         font-size: 30px;
@@ -262,14 +262,14 @@ form button{
         flex-direction: column;
         padding: 30px;
     }
-    .row{
+    .cards-container__row{
         width: 800px;
         height: 600px;
         flex-direction: column;
         padding: 10px;
         margin: 50px;
     }
-    #image_row{
+    .projects__image-row{
         width: 800px;
         flex-direction: column;
     }
