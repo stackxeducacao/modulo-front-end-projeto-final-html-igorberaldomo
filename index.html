@@ -14,9 +14,10 @@
             <div id="text">
                 <h1>Hello, I am <u id="sublinhado">Adam keys</u></h1>
                 <p>Based in UK, I am a web developer passionate about building acessible web apps that users love</p>
-                <a href="" target="_blank">Contact me</a>
+                <a href="" target="_blank" id ="link">Contact me</a>
+                <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
             </div>
-            <img src="images/image.png" id="image">
+            <img id="image">
         </div>
         <div id="cards-container">
             <div class="row">
@@ -51,15 +52,23 @@
         <h2 id="bigtitle">Projects</h2>
         <div id="projects">
             <div id = "image_row">
-                <img src="/images/projects.png" class="projects_image">
-                <img src="/images/projects_2.png" class="projects_image">
+                <img src="assets/images/thumbnail-project-1.webp" class="projects_image">
+                <img src="assets/images/thumbnail-project-2.webp" class="projects_image">
+            </div>
+            <div id = "image_row">
+                <img src="assets/images/thumbnail-project-3.webp" class="projects_image">
+                <img src="assets/images/thumbnail-project-4.webp" class="projects_image">
+            </div>
+            <div id = "image_row">
+                <img src="assets/images/thumbnail-project-5.webp" class="projects_image">
+                <img src="assets/images/thumbnail-project-6.webp" class="projects_image">
             </div>
         </div>
         <form id="form">
-            <label for="name">Nome: <input type="text" placeholder="Name" id="name" required> </label>
-            <label for="email">Email: <input type="email" placeholder="Email" id="email"></label>
+            <input type="text" placeholder="Name" id="name" required> 
+            <input type="email" placeholder="Email" id="email">
             <p id ="erro"></p>
-            <label for="message">Message:</label><textarea placeholder="Message" id="message"></textarea> 
+            <textarea placeholder="Message" id="message"></textarea> 
             <button type="submit" onclick="enviar()">envio</button>
         </form>
     </div>
