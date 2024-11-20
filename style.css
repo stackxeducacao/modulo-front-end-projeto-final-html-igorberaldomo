@@ -21,6 +21,19 @@
     background-color: rgba(3, 4, 5, 0.829);
 }
 
+#nav{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    width: 400px;
+    
+}
+#nav img{
+    margin: 10px;
+}
 #text{
     color: white;
     font-size: 30px;
@@ -136,20 +149,20 @@
     width: 500px;
     height: 30px;
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0.459);
+    background-color: rgba(0, 0, 0, 0.027);
     color: white;
     border: none;
-    border-radius: 5px;
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.692)
 }
 #form textarea{
     padding: 10px;
     width: 500px;
     height: 150px;
     margin: 10px;
-    background-color:rgba(0, 0, 0, 0.459);
+    background-color:rgba(0, 0, 0, 0.027);
     color: white;
     border: none;
-    border-radius: 5px;
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.692)
 
 }
 form button{
@@ -199,6 +212,7 @@ form button{
     }
     #container{
         width: 800px;
+        height: 800px;
         flex-direction: column;
     }
     #bigtitle{
@@ -208,18 +222,22 @@ form button{
         width: 800px;
         height: 1600px;
         flex-direction: column;
-
-        margin: 0px;
+        
     }
     .cards{
+        padding: 20px;
         height: 300px;
         width: 300px;
         font-size: 20px;
     }
     .cards h2, .card p{
-        padding: 20px;
+        padding: 0px;
+        margin-top: 0px;
         font-size: 30px;
-        margin: 0px;
+
+    }
+    .cards img{
+        background-color: white;
     }
     #bigtitle{
         width: 800px;
@@ -234,8 +252,10 @@ form button{
     }
     .row{
         width: 800px;
+        height: 600px;
         flex-direction: column;
         padding: 10px;
+        margin: 50px;
     }
     #image_row{
         width: 800px;
