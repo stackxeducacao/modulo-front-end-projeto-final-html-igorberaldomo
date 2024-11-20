@@ -10,6 +10,7 @@
     height: 100%;
     width: 100%;
 }
+/* container com a imagem principal e a introdução */
 #container{
     display: flex;
     justify-content: space-evenly;
@@ -21,6 +22,7 @@
     background-color: rgba(3, 4, 5, 0.829);
 }
 
+/* barra de icones */
 #nav{
     display: flex;
     justify-content: center;
@@ -34,13 +36,13 @@
 #nav img{
     margin: 10px;
 }
+/* textxo de apresentação */
 #text{
     color: white;
     font-size: 30px;
     align-items: baseline;
     text-align: start;
 }
-
 #link{
     color: white;
     font-weight: 600;
@@ -56,6 +58,7 @@
     text-decoration: underline;
     text-decoration-color: teal;
 }
+/* container com os cards */
 #cards-container{
     display: flex;
     justify-content: space-evenly;
@@ -66,6 +69,7 @@
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.829);
 }
+/* linha de cards */
 .row{
     display: flex;
     justify-content: center;
@@ -75,6 +79,7 @@
     margin-bottom: 30px;
     width: 1800px;
 }
+/* os cards em si */
 .cards{
     display: flex;
     justify-content: center;
@@ -88,9 +93,15 @@
     background-color: rgba(3, 4, 5, 0.829);
     font-size: 32px;
 }
+/* formatação dos cards */
 .cards h2, .card p{
     margin: 0px;
 }
+.cards img{
+    background-color: white;
+}
+
+/* container com os projetos */
 #projects{
     display: flex;
     justify-content: baseline;
@@ -101,6 +112,7 @@
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.829);
 }
+/* titulo */
 #bigtitle{
     display: flex;
     justify-content:left;
@@ -114,6 +126,7 @@
     background-color: rgba(0, 0, 0, 0.829);
     color :white
 }
+/* linha da imagem */
 #image_row{
     display: flex;
     justify-content: center;
@@ -125,7 +138,6 @@
 }
 .projects_image{
     display: flex;
-    border: 2px solid white;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -133,6 +145,8 @@
     height: 600px;
     width: 450px;
 }
+
+/* formulario de contato */
 #form{
     display: flex;
     justify-content: center;
@@ -236,9 +250,7 @@ form button{
         font-size: 30px;
 
     }
-    .cards img{
-        background-color: white;
-    }
+
     #bigtitle{
         width: 800px;
         justify-content:center;
